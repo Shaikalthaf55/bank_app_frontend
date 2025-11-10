@@ -21,12 +21,15 @@ function Accounts() {
     <Navbar/>
         <div style={{padding:20}}>
             <ul>
-                <li key={accounts.id}>
-                    <Link to={`/accounts/${accounts.id}`}>
-                    {accounts.number}-{accounts.type}-{accounts.balance}
+                {accounts.map((account)=>{
+                   return <li key={account.id}>
+                    <Link to={`/accounts/${account.id}`}>
+                    {account.number}-{account.type}-{account.balance}
                     </Link>
-                </li>
+                </li>})
+                }
             </ul>
+            
         </div>
     </>
 
