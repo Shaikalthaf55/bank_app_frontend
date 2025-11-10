@@ -15,6 +15,9 @@ function Login(){
             setLoading(true)
             const res=await loginApi(form)
             console.log("successfully login",res.data);
+            if(res.data?.token){
+                localStorage.setItem("token",res.data.token)
+            }
             alert("logged In")
         } catch (err) {
             console.error(err);
