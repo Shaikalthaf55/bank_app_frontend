@@ -1,7 +1,8 @@
+import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
     <div>
-      <p>Welcome to react</p>
+      <AppRoutes/>
     </div>
   );
 }
