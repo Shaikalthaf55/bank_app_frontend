@@ -16,6 +16,7 @@ function Navbar() {
         <div style={{display:"flex", gap:12}}>
             <Link to="/accounts">Accounts</Link>
             <Link to="/transactions">Transactions</Link>
+            <Link to="/profile">profile</Link>
             <button onClick={handleLogOut}>logout</button>
         </div>
     </div>
