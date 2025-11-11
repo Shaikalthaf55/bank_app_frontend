@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api=axios.create({
-    baseURL:"https:localhost:8080/bank_app",
+    baseURL:"https://localhost:8080/bank_app",
 });
 api.interceptors.request.use((config)=>{
     const token=localStorage.getItem("token")

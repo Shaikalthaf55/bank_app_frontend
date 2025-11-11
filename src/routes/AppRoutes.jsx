@@ -9,6 +9,8 @@ import AccountDetails from "../Features/accounts/pages/AccountDetails"
 import TransactionDetails from "../Features/transactions/pages/TransactionDetails"
 import Transfer from "../Features/transactions/pages/Transfer"
 import UserProfile from "../Features/users/pages/UserProfile"
+import AdmiUsers from "../Features/admin/pages/AdmiUsers"
+import AdminUserDetails from "../Features/admin/pages/AdminUserDetails"
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -23,7 +25,8 @@ function AppRoutes() {
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/transactiondetails" element={<TransactionDetails />} />
           <Route path="/profile" element={<UserProfile />} />
-          
+          <Route path="/admin/users" element={<AdmiUsers />} />
+          <Route path="/admin/users/:id" element={<AdminUserDetails />} />
         </Route>
         
     </Routes>

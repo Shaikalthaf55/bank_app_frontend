@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"10px 16px",borderBottom:"1px solid #eee"}}>
         <div>
-            <Link to="/" style={{textDecoration:"none",fontWeight:700}}></Link>
+            <Link to="/" style={{textDecoration:"none",fontWeight:700}}>Home</Link>
         </div>
         <div style={{display:"flex", gap:12}}>
             <Link to="/accounts">Accounts</Link>

@@ -44,18 +44,21 @@ function UserProfile() {
             <input 
             type="text"
             name='name'
+            value={user.name}
             placeholder='enter your name'
             onChange={hanleChange}
             />
             <input 
             type="text"
             name='mail'
+            value={user.mail}
             placeholder='enter your mail'
             onChange={hanleChange}
             />
             <input 
             type="text"
             name='phone'
+            value={user.phone}
             placeholder='enter your phone'
             onChange={hanleChange}
             />
